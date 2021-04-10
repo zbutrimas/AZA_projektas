@@ -42,6 +42,7 @@ public class PacientasController implements Controller {
         output.produce("3 amžiaus grupė: 18-64 -  dar neskiepijam");
         output.produce("2 amžiaus grupė: 65-79 - uz savaites");
         output.produce("1 amžiaus grupė: 80+ - rytoj");
+        output.produce("Išeisite iš programos paspaudę 0 ir ENTER");
         output.produce("---------------------------------------");
         output.produce("Įveskite savo amžių");
 
@@ -72,6 +73,7 @@ public class PacientasController implements Controller {
                 listTreciaGrupe();
                 break;
             }
+            case 0: {return;}
             default: {
                 output.produce("Įveskite teisingą amžių");
                 printInstructions();
@@ -106,6 +108,7 @@ public class PacientasController implements Controller {
         System.out.println("Vykdami vakcinuotis, turėkite asmens dokumentą.");
         System.out.println("Jei atvykstate pakartotiniam skiepui," +
                 " turėkite ir pirmo vizito metu jums išduotą skiepijimo kortelę.");
+        output.produce("Išeisite iš programos paspaudę 0 ir ENTER");
 
     }
 
@@ -136,6 +139,7 @@ public class PacientasController implements Controller {
         System.out.println("Vykdami vakcinuotis, turėkite asmens dokumentą.");
         System.out.println("Jei atvykstate pakartotiniam skiepui," +
                 " turėkite ir pirmo vizito metu jums išduotą skiepijimo kortelę.");
+        output.produce("Išeisite iš programos paspaudę 0 ir ENTER");
 
     }
 
@@ -143,6 +147,7 @@ public class PacientasController implements Controller {
         output.produce("Jūs esate 1 amžiaus grupėje");
         output.produce("Šitos amžiaus grupės dar neskiepyjam");
         output.produce("Pranešime, kada skiepysime jūsų amžiaus grupę.");
+        output.produce("Išeisite iš programos paspaudę 0 ir ENTER");
 
     }
 }
